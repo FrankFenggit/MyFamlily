@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.frank.bumyfamily.dao.AccoutTypePoMapper">
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="DATE" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.frank.bumyfamily.entity.AccoutTypePo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="key_id" jdbcType="INTEGER" property="keyId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="son_id" jdbcType="VARCHAR" property="sonId" />
+    <result column="submission_data" jdbcType="TIMESTAMP" property="submissionData" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    insert into tbl_accout_type (id, key_id, type, 
+      son_id, submission_data)
+    values (#{id,jdbcType=INTEGER}, #{keyId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
+      #{sonId,jdbcType=VARCHAR}, #{submissionData,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.frank.bumyfamily.entity.AccoutTypePo">
+    update tbl_accout_type
+    set key_id = #{keyId,jdbcType=INTEGER},
+      type = #{type,jdbcType=VARCHAR},
+      son_id = #{sonId,jdbcType=VARCHAR},
+      submission_data = #{submissionData,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, key_id, type, son_id, submission_data
+    from tbl_accout_type
+  </select>
+</mapper>
